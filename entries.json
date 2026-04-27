@@ -1,10 +1,10 @@
 [
-{"fname": "1.jpg", "actual": "0.60+", "appears": ["u-but"]},
+{"fname": "1.jpg", "date": "2026-04-23", "actual": "0.60+", "appears": ["u-but"]},
 {"fname": "2.jpg", "actual": "2", "appears": ["r", "𝛾"]},
 {"fname": "3.jpg", "actual": "5", "appears": ["4", "5", "S"]},
 {"fname": "4.jpg", "actual": "u₁=0, u₂=4", "appears": ["N₁=0, N₂=4"]},
 {"fname": "5.jpg", "actual": "v₂", "appears": ["√2"]},
-{"fname": "6.jpg", "actual": "1", "appears": ["𝒜"]},
-{"fname": "7.jpg", "actual": "ϕ(-2.5)=.9938", "appears": []},
-{"fname": "8.jpg", "actual": "-2.5", "appears": ["-Z05"]}
+{"fname": "6.jpg", "date": "2026-04-27", "actual": "1", "appears": ["𝒜"]},
+{"fname": "7.jpg", "date": "2026-04-27", "actual": "ϕ(-2.5)=.9938", "appears": []},
+{"fname": "8.jpg", "date": "2026-04-27", "actual": "-2.5", "appears": ["-Z05"]}
 ]
