@@ -4,5 +4,6 @@
 {"fname": "3.jpg", "actual": "5", "appears": ["4", "5", "S"]},
 {"fname": "4.jpg", "actual": "u₁=0, u₂=4", "appears": ["N₁=0, N₂=4"]},
 {"fname": "5.jpg", "actual": "v₂", "appears": ["√2"]},
-{"fname": "6.jpg", "actual": "1", "appears": ["𝒜"]}
+{"fname": "6.jpg", "actual": "1", "appears": ["𝒜"]},
+{"fname": "7.jpg", "actual": "ϕ(-2.5)=.9938", "appears": []}
 ]
