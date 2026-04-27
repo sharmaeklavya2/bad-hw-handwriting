@@ -14,17 +14,17 @@ I could decipher them from context, but it's hard to decipher them otherwise.</p
 {% for entry in entries %}
 <div class="entry">
     <img src="img/{{entry.fname}}"{% if entry.width %} width="{{entry.width}}"{% endif %}{% if entry.height %} height="{{entry.height}}"{% endif %}{% if entry.mode %} class="mode-{{entry.mode}}"{% endif %}/>
-    {% if entry.appears %}
+{% if entry.appears -%}
     <div class="caption">
         <span class="key">What it seems:</span>
         <span class="value incorrect">{{'; '.join(entry.appears)}}</span>
     </div>
-    {% endif %}
+{%- endif %}
     <div class="caption">
         <span class="key">What it is:</span>
         <span class="value correct">{{entry.actual}}</span>
     </div>
 </div>
-{% endfor %}
+{%- endfor %}
 </body>
 </html>
