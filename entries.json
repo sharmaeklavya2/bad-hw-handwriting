@@ -1,11 +1,11 @@
 [
-{"fname": "1.jpg", "date": "2026-04-23", "actual": "0.60+", "appears": ["u-but"]},
-{"fname": "2.jpg", "actual": "2", "appears": ["r", "𝛾"]},
-{"fname": "3.jpg", "actual": "5", "appears": ["4", "5", "S"]},
-{"fname": "4.jpg", "actual": "u₁=0, u₂=4", "appears": ["N₁=0, N₂=4"]},
-{"fname": "5.jpg", "actual": "v₂", "appears": ["√2"]},
-{"fname": "6.jpg", "date": "2026-04-27", "actual": "1", "appears": ["𝒜"]},
-{"fname": "7.jpg", "date": "2026-04-27", "actual": "ϕ(-2.5)=.9938", "appears": []},
-{"fname": "8.jpg", "date": "2026-04-27", "actual": "-2.5", "appears": ["-Z05"]},
-{"fname": "9.jpg", "date": "2026-04-27", "actual": "x̅ = 500 - 1.645(2)", "appears": ["x̅ = tw -1·∀t5(z)"]}
+{"fname": "01.jpg", "date": "2026-04-23", "actual": "0.60+", "appears": ["u-but"]},
+{"fname": "02.jpg", "actual": "2", "appears": ["r", "𝛾"]},
+{"fname": "03.jpg", "actual": "5", "appears": ["4", "5", "S"]},
+{"fname": "04.jpg", "actual": "u₁=0, u₂=4", "appears": ["N₁=0, N₂=4"]},
+{"fname": "05.jpg", "actual": "v₂", "appears": ["√2"]},
+{"fname": "06.jpg", "date": "2026-04-27", "actual": "1", "appears": ["𝒜"]},
+{"fname": "07.jpg", "date": "2026-04-27", "actual": "ϕ(-2.5)=.9938", "appears": []},
+{"fname": "08.jpg", "date": "2026-04-27", "actual": "-2.5", "appears": ["-Z05"]},
+{"fname": "09.jpg", "date": "2026-04-27", "actual": "x̅ = 500 - 1.645(2)", "appears": ["x̅ = tw -1·∀t5(z)"]}
 ]
