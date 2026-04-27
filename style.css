@@ -5,6 +5,7 @@ body {
     --link-color: #1a0dab; --vlink-color: #681da8;
     --text-danger: #dc3545; --text-warning: #ff9705; --text-success: #198754;
     --bg-danger: #ff00001a; --bg-warning: #ff96001a; --bg-success: #00ff001a;
+    --invert-filter: brightness(.85) invert(1) brightness(.75) hue-rotate(180deg);
 }
 @media (prefers-color-scheme: dark) {
     body {
@@ -66,4 +67,12 @@ body {
 }
 .entry .correct {
     color: var(--text-success);
+}
+
+/* invert color */
+@media (prefers-color-scheme: dark) {
+    img.mode-light {filter: var(--invert-filter);}
+}
+@media (prefers-color-scheme: light) {
+    img.mode-dark {filter: var(--invert-filter);}
 }

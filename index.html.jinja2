@@ -13,7 +13,7 @@
 I could decipher them from context, but it's hard to decipher them otherwise.</p>
 {% for entry in entries %}
 <div class="entry">
-    <img src="img/{{entry.fname}}"{% if entry.width %} width="{{entry.width}}"{% endif %}{% if entry.height %} height="{{entry.height}}"{% endif %}/>
+    <img src="img/{{entry.fname}}"{% if entry.width %} width="{{entry.width}}"{% endif %}{% if entry.height %} height="{{entry.height}}"{% endif %}{% if entry.mode %} class="mode-{{entry.mode}}"{% endif %}/>
     <div class="caption">
         <span class="key">What it seems:</span>
         <span class="value incorrect">{{'; '.join(entry.appears)}}</span>

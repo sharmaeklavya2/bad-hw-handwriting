@@ -24,6 +24,12 @@ def addImgDims(entries: list[dict[str, Any]], imgDir: str) -> None:
             entry['width'], entry['height'] = img.size
 
 
+def addMode(entries: list[dict[str, Any]]) -> None:
+    for entry in entries:
+        if 'mode' not in entry:
+            entry['mode'] = 'light'
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--template', default=pjoin(ROOT_DIR, 'index.html.jinja2'),
@@ -40,7 +46,10 @@ def main() -> None:
         entries = json.load(fp)
     with open(args.template) as fp:
         template = jinja2.Template(fp.read())
+
     addImgDims(entries, args.img_dir)
+    addMode(entries)
+
     output = template.render({'entries': entries})
     with open(args.output, 'w') as fp:
         fp.write(output)
