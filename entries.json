@@ -6,5 +6,6 @@
 {"fname": "5.jpg", "actual": "v₂", "appears": ["√2"]},
 {"fname": "6.jpg", "date": "2026-04-27", "actual": "1", "appears": ["𝒜"]},
 {"fname": "7.jpg", "date": "2026-04-27", "actual": "ϕ(-2.5)=.9938", "appears": []},
-{"fname": "8.jpg", "date": "2026-04-27", "actual": "-2.5", "appears": ["-Z05"]}
+{"fname": "8.jpg", "date": "2026-04-27", "actual": "-2.5", "appears": ["-Z05"]},
+{"fname": "9.jpg", "date": "2026-04-27", "actual": "x̅ = 500 - 1.645(2)", "appears": ["x̅ = tw -1·∀t5(z)"]}
 ]
