@@ -1,0 +1,7 @@
+[
+{"fname": "1.jpg", "actual": "0.60+", "appears": ["u-but"]},
+{"fname": "2.jpg", "actual": "2", "appears": ["r", "γ"]},
+{"fname": "3.jpg", "actual": "5", "appears": ["4", "5", "S"]},
+{"fname": "4.jpg", "actual": "u₁=0, u₂=4", "appears": ["N₁=0, N₂=4"]},
+{"fname": "5.jpg", "actual": "v₂", "appears": ["√2"]}
+]
