@@ -7,6 +7,7 @@ from os.path import join as pjoin
 import argparse
 import jinja2
 from typing import Any
+from collections.abc import Mapping
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -30,6 +31,16 @@ def addMode(entries: list[dict[str, Any]]) -> None:
             entry['mode'] = 'light'
 
 
+def prepDir(destDir: str, symlinkMap: Mapping[str, str]) -> None:
+    # print(f'prepDir({json.dumps(destDir)}, {{...}})', file=sys.stderr)
+    os.makedirs(destDir, exist_ok=True)
+    for fname, srcFpath in symlinkMap.items():
+        destFpath = pjoin(destDir, fname)
+        if os.path.islink(destFpath):
+            os.remove(destFpath)
+        os.symlink(srcFpath, destFpath)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('--template', default=pjoin(ROOT_DIR, 'index.html.jinja2'),
@@ -39,7 +50,7 @@ def main() -> None:
     parser.add_argument('--img-dir', default=pjoin(ROOT_DIR, 'img'),
         help='Path to directory containing images (default: <repo>/img)')
     parser.add_argument('-o', '--output', default=pjoin(ROOT_DIR, 'index.html'),
-        help='Path to output html file (default: <repo>/index.html)')
+        help='Path to output html file or directory (default: <repo>/index.html)')
     args = parser.parse_args()
 
     with open(args.entries) as fp:
@@ -51,7 +62,20 @@ def main() -> None:
     addMode(entries)
 
     output = template.render({'entries': entries})
-    with open(args.output, 'w') as fp:
+
+    _, outExt = os.path.splitext(args.output)
+    outputIsFile = outExt == '.html'
+    if outputIsFile:
+        htmlPath = args.output
+    else:
+        htmlPath = pjoin(args.output, 'index.html')
+        symlinkMap = {
+            'style.css': pjoin(ROOT_DIR, 'style.css'),
+            'img': args.img_dir,
+        }
+        if os.path.realpath(ROOT_DIR) != os.path.realpath(args.output):
+            prepDir(args.output, symlinkMap)
+    with open(htmlPath, 'w') as fp:
         fp.write(output)
 
 
