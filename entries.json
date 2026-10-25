@@ -12,5 +12,6 @@
 {"fname": "11.jpg", "date": "2026-05-13", "actual": "t/(α-1)", "appears": ["t/(2-1)"]},
 {"fname": "12.jpg", "date": "2026-10-04", "actual": "than", "appears": ["+ucꞀn"]},
 {"fname": "13.jpg", "date": "2026-10-04", "actual": "10.24%", "appears": ["10·Σψ° h"]},
-{"fname": "14.jpg", "date": "2026-10-24", "actual": "sufficiently large", "appears": []}
+{"fname": "14.jpg", "date": "2026-10-24", "actual": "sufficiently large", "appears": []},
+{"fname": "15.jpg", "date": "2026-10-25", "actual": "Var(N)", "appears": []}
 ]
