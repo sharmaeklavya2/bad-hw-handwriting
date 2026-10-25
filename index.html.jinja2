@@ -9,8 +9,7 @@
 </head>
 <body>
 <h1>Bad Homework Handwriting</h1>
-<p>These are examples of bad handwriting I have come across while grading homeworks.
-I could decipher them from context, but it's hard to decipher them otherwise.</p>
+<p>Examples of bad handwriting I have come across, which I could decipher from context.</p>
 {% for entry in entries %}
 <div class="entry">
     <img src="img/{{entry.fname}}"{% if entry.width %} width="{{entry.width}}"{% endif %}{% if entry.height %} height="{{entry.height}}"{% endif %}{% if entry.mode %} class="mode-{{entry.mode}}"{% endif %}/>
