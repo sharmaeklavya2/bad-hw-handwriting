@@ -15,5 +15,6 @@
 {"fname": "14.jpg", "date": "2026-10-24", "actual": "sufficiently large", "appears": []},
 {"fname": "15.jpg", "date": "2026-10-25", "actual": "Var(N)", "appears": []},
 {"fname": "16.jpg", "date": "2026-11-16", "actual": "¯\\_(ツ)_/¯", "appears": []},
-{"fname": "17.jpg", "date": "2026-11-18", "actual": "(c) mean and median; which is less affected by the 18-minute wait?", "appears": []}
+{"fname": "17.jpg", "date": "2026-11-18", "actual": "(c) mean and median; which is less affected by the 18-minute wait?", "appears": []},
+{"fname": "18.jpg", "date": "2026-11-18", "actual": "(b)", "appears": ["(h)"]}
 ]
